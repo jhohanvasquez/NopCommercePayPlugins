@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Wompi Colombia",
+  "SystemName": "Payments.PayWompi",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Estrategia Segura",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.PayWompi.dll",
+  "Description": "Este PlugIn permite pagar con Wompi Colombia"
+}

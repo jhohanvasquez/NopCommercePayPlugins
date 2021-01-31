@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Pay ZonaPagos",
+  "SystemName": "Payments.PayZonaPagos",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Estrategia Segura",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.PayZonaPagos.dll",
+  "Description": "Este PlugIn permite pagar con Zona Pagos"
+}

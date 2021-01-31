@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Epayco Colombia",
+  "SystemName": "Payments.PayEpayco",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.30" ],
+  "Author": "Estrategia Segura",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.PayEpayco.dll",
+  "Description": "Este PlugIn permite pagar con Epayco Colombia"
+}

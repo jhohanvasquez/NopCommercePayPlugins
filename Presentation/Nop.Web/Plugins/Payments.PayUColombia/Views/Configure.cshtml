@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "_ConfigurePlugin";
+}
+
+@model ConfigurationModel
+@using Nop.Plugin.Payments.PayUColombia.Models;
+@using Nop.Web.Framework.Localization;
+
+<form asp-controller="PaymentPayUColombia" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+			
+			<div class="form-group">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="UseSandbox_OverrideForStore" asp-input="UseSandbox" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                        <nop-label asp-for="UseSandbox" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="UseSandbox" />
+                        <span asp-validation-for="UseSandbox"></span>
+                    </div>
+                </div>
+			
+			   <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AccountID" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AccountID" asp-required="true"/>
+                        <span asp-validation-for="AccountID"></span>
+                    </div>
+                </div>
+			
+			  <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MerchantID" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MerchantID" asp-required="true"/>
+                        <span asp-validation-for="MerchantID"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ApiLogin" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ApiLogin" asp-required="true"/>
+                        <span asp-validation-for="ApiLogin"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ApiKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ApiKey" asp-required="true"/>
+                        <span asp-validation-for="ApiKey"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="PayUColombiaUri" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="PayUColombiaUri" asp-required="true"/>
+                        <span asp-validation-for="PayUColombiaUri"></span>
+                    </div>
+                </div>
+              
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AdditionalFee" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFee" asp-required="true"/>
+                        <span asp-validation-for="AdditionalFee"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="Save" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

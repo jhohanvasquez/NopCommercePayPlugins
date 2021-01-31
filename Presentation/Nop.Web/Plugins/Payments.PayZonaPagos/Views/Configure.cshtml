@@ -1,0 +1,171 @@
+﻿@{
+    Layout = "_ConfigurePlugin";
+}
+
+@model ConfigurationModel
+@using Nop.Plugin.Payments.PayZonaPagos.Models;
+@using Nop.Web.Framework.Localization;
+
+<form asp-controller="PaymentPayZonaPagos" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">			
+			   
+			   <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Uri" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Uri" asp-required="true"/>
+                        <span asp-validation-for="Uri"></span>
+                    </div>
+                </div>
+			
+			  <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Nombre" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Nombre" asp-required="true"/>
+                        <span asp-validation-for="Nombre"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Token" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Token" asp-required="true"/>
+                        <span asp-validation-for="Token"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Usuario" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Usuario" asp-required="true"/>
+                        <span asp-validation-for="Usuario"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Clave" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Clave" asp-required="true"/>
+                        <span asp-validation-for="Clave"></span>
+                    </div>
+                </div>
+              
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="DirectorioVirtual" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="DirectorioVirtual" asp-required="true"/>
+                        <span asp-validation-for="DirectorioVirtual"></span>
+                    </div>
+                </div>
+				
+				  <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="RutaMetodo" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="RutaMetodo" asp-required="true"/>
+                        <span asp-validation-for="RutaMetodo"></span>
+                    </div>
+                </div>
+				
+								
+				 <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="RutaToken" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="RutaToken" asp-required="true"/>
+                        <span asp-validation-for="RutaToken"></span>
+                    </div>
+                </div>
+				
+				 <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="TipoSeguridad" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="TipoSeguridad" asp-required="true"/>
+                        <span asp-validation-for="TipoSeguridad"></span>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EncabezadoToken" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EncabezadoToken" asp-required="true"/>
+                        <span asp-validation-for="EncabezadoToken"></span>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EncabezadoUsuario" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EncabezadoUsuario" asp-required="true"/>
+                        <span asp-validation-for="EncabezadoUsuario"></span>
+                    </div>
+                </div>
+				
+				<div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EncabezadoClave" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EncabezadoClave" asp-required="true"/>
+                        <span asp-validation-for="EncabezadoClave"></span>
+                    </div>
+                </div>			
+			
+				
+				<div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="Prefijo" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="Prefijo" asp-required="true"/>
+                        <span asp-validation-for="Prefijo"></span>
+                    </div>
+                </div>
+				
+				  <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AdditionalFee" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFee" asp-required="true"/>
+                        <span asp-validation-for="AdditionalFee"></span>
+                    </div>
+                </div>
+				
+				 <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="Save" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>

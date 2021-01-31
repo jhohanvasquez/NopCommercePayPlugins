@@ -1,0 +1,5 @@
+﻿{
+  "DataConnectionString": "Data Source=JHOHAN;Initial Catalog=NopEcommerce4.3;Integrated Security=True;Persist Security Info=False",
+  "DataProvider": "sqlserver",
+  "RawDataSettings": {}
+}
